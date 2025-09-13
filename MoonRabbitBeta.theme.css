@@ -10,71 +10,71 @@
  * @version 5
 */
 
-/*------------------------------------------------------
+------------------------------------------------------
                 all the customization
-------------------------------------------------------*/
+------------------------------------------------------
 :root {
     /* The text that appear in top, leave it blank ("") if you dont want any */
     --custom-text: "TSUKINO MITO";
 
-    /* General Colors */
+    General Colors 
     --border-color: #da4a60;
     --drag-gradient1: #e8c4d3;
     --drag-gradient2: #e39ba7;
     --name-bg: #d95b72;
 
-    /* Background Colors & BG Image */
+    Background Colors & BG Image
     --bg-gradient1: #e297b2;
     --bg-gradient2: #c0b4d5;
     --bg-gradient3: #54b5de;
-    --bg-image: none; /* Write the image url, example url("your url") [none is default]*/
-    --opacity: 0; /* Value in numbers from 0 to 1, but there is a limit */
-    --bg-blur: 6px; /* Value in px */
+    --bg-image: ("https://i.imgur.com/MvkWy9M.png"); 
+    --opacity: 0; Value in numbers from 0 to 1, but there is a limit
+    --bg-blur: 6px; Value in px
 
-    /* HSL(Hue, Saturation, Lightness). This values will change the accent color (That blue color in most buttons) */
-    --H: 339; /* Value in numbers [339 is default] */
-    --S: 97%; /* Value in % [97% is default] */
-    --L: 71%; /* Value in % [71% is default] */
+    HSL(Hue, Saturation, Lightness). This values will change the accent color (That blue color in most buttons) */
+    --H: 339; Value in numbers [339 is default]
+    --S: 97%; Value in % [97% is default]
+    --L: 71%; Value in % [71% is default]
 
     /* HSL DarkTheme */
-    --darkH: 0;     /* Value in numbers [0 is default] */
-    --darkS: 0%;    /* Value in % [0% is default] */
-    --darkL: 16%;   /* Value in % [16% is default] */
+    --/*darkH: 0;      /* Value in numbers [0 is default] */
+    --/*darkS: 0%;     /* Value in % [0% is default] */
+    --/*darkL: 16%;    /* Value in % [16% is default] */
 
-    /* Windows Buttons Colors */
+    Windows Buttons Colors 
     --close-color: #da5169;
     --max-color: #ffdf5b;
     --min-color: #00a0cb;
 
-    /* Status Colors */
+    Status Colors 
     --online-color: #caffbf;
     --idle-color: #fdffb6;
     --dnd-color: #ffadad;
     --offline-color: #d2d2cf;
     --streaming-color: #bdb2ff;
 
-    /* Chatbar Colors */
+    Chatbar Colors 
     --textarea-background: #F0F2F2;
     --text-color: #313D40;
     --icon-color: var(--text-color);
     --selected-text-bg: var(--text-color);
     --selected-text-color: var(--textarea-background);
-    --mentioned-color: 200, 100%, 60%; /* HSL Values Only */
+    --mentioned-color: 200, 100%, 60%; /* HSL Values Only 
 
-    /* Other options */
+     Other options 
     --border-width: 3px;
     --round-corners: 16px;
 }
 
-/* Selection text color */
+Selection text color 
 ::selection {
-    background-color: var(--selected-text-bg); /* text selection*/
-    color: var(--selected-text-color); /* text color */
+    background-color: var(--selected-text-bg);  text selection
+    color: var(--selected-text-color);  text color 
 }
 
-/*------------------------------------------------------
+------------------------------------------------------
                 anything else down here
-------------------------------------------------------*/
+------------------------------------------------------
 :root {
     --blurple-50: hsl(var(--H), var(--S), var(--L));
     
@@ -106,7 +106,7 @@
     --brand-900: hsl(var(--H), calc(0.54*var(--S)), calc(0*var(--L)));
 }
 
-/* All App */
+ All App 
 #app-mount .bar_c38106:not(.show_c38106) {
     background: linear-gradient(var(--drag-gradient1), var(--drag-gradient2));
     top: var(--border-width);
@@ -131,7 +131,7 @@
     border-bottom-left-radius: var(--round-corners);
 }
 
-/* WinButtons */
+WinButtons 
 .winButtons_c38106 {
     position: fixed;
     left: calc(9px + var(--border-width));
@@ -168,7 +168,7 @@
     transform: scale(1.14);
 }
 
-/* User Bar */
+User Bar 
 .panels_c48ade::before {
     background: linear-gradient(var(--drag-gradient1), var(--drag-gradient2));
     display: block;
@@ -241,7 +241,7 @@
     flex-direction: row-reverse;
 }
 
-/* Background Gradient */
+ Background Gradient
 .bg__960e4 {
     background-image: linear-gradient(90deg, var(--bg-gradient1) 0%, var(--bg-gradient2) 50%, var(--bg-gradient3) 100%);
 }
@@ -265,7 +265,7 @@
     }
 }
 
-/* Top Icons */
+ Top Icons 
 #app-mount .bar_c38106 .trailing_c38106 {
     margin-right: 8px;
 }
@@ -295,7 +295,7 @@
     width: 4px;
 }
 
-/* Bar Alert */
+ Bar Alert 
 #app-mount .notice__6e2b9 {
     border-radius: 100px;
     width: 50%;
@@ -312,7 +312,7 @@
     padding-bottom: 0;
 }
 
-/* Mini Profile */
+ Mini Profile 
 .content_f75fb0 .outer_c0bea0 {
     margin: 8px;
     height: calc(100% - 24px);
